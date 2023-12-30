@@ -1,30 +1,62 @@
+# Quick Start
 
-## How to run
-npm start in the root directory
+## How to Run
+Run `npm start` in the root directory.
 
-## How to test
+## How to Test
+Run `npm test` in the root directory.
 
-npm test in the root directory
+## Adding New Scripts
+To add a new script, navigate to `package.json` and add the desired command with a key-value pair.
 
-## Add new script
+# README Content
 
-go into the package.json and add the desirec command with a key value
+"If you made any assumptions, what are they? Outline what else needs to be done if given more time."
 
-
-
-## Include a README that includes the following:
-"If you made any assumptions, what are they Outline what else needs to be done if given more time"
-
-
-# Lets break it up into sections 
+### Sections Breakdown
 
 ## Form
 
-1. The form right now accepted input but when we click the submit button it doesn't do anything really useful to us
-    for this we need to get all the values from the form inputs and validate them. 
+### What I Changed and Why
 
- Building on the above we would also need more information on the db structure where this is going etc and how to package the data for the post requests and even what response we would expect back in this case
+In a real environment, changes wouldn't be made and found out about when the code is displayed on the development site. Discussions and contributions would lead to the most effective solution considering all aspects.
 
-2. We need to do phone number validation and country code, it would be nice to have a drop down of the country codes with their respective  flags
+#### Index Counter
 
-3. 
+I've adjusted the index counter's display as per the designs and ensured each index has a distinctive color scheme. The index counter correlates with the maximum number of referrals.
+
+#### DOB
+
+Changed the DOB style to a date-picker for better user experience.
+
+#### Icons
+
+Removed icons like the birthday cake to maintain a cleaner form appearance, ensuring clarity with red asterisks for mandatory fields. Icons might be useful for mobile or visually impaired users, but this form targets team members.
+
+#### "Add +" Button
+
+Shifted the "Add another referral" button slightly to align with the natural line of sight when viewing the page.
+
+### Assumptions
+
+Prepopulated the contact language field with English, assuming it's the most commonly used language.
+
+Implemented a delete action using the trash icon for each referral index.
+
+Utilized MUI's alert banner to handle alerts for adding more than 5 referrals, allowing control from the parent view/component.
+
+Added a dummy CircleCI YAML file to demonstrate the intent of employing CircleCI in the pipeline.
+
+Included tests, though imperfect due to Axios mocking issues, to showcase the importance of testing and mocking.
+
+## TODO if I Had More Time
+
+1. **Form Submission:** Implement form submission logic to process and validate form inputs.
+2. **Phone Number Validation:** Implement phone number validation and include a dropdown for country codes.
+3. **Reevaluate Icons:** Reconsider the usage of icons for a less cluttered appearance.
+4. **Quick Form Clear:** Implement a full clear functionality for the expanded form.
+5. **Banner Improvement:** Enhance the banner for better alignment and responsiveness.
+6. **Tooltips:** Add tooltips for optional info, enhancing user experience.
+7. **End-to-End Testing:** Set up E2E testing using Cypress and Docker, integrating with CircleCI for server communication and result uploads.
+8. **Seek Clarifications:** Engage in discussions to gather more details on future views and user flow to refine the current implementation.
+
