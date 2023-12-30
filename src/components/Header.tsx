@@ -17,7 +17,7 @@ const Header = () => {
       <Typography variant="h2" sx={headerStyles}>
         Patient Referral Form
       </Typography>
-      <Typography variant="h2" sx={headerStyles}>
+      <Typography variant="h3" sx={headerStyles}>
         ConcussionRx
       </Typography>
     </Box>
