@@ -49,15 +49,32 @@ export const ReferralForm: React.FC<{
     }
   };
 
-  const fetchData = async (input: string) => {
+  async function fetchData(input: string) {
     try {
-      const response = await fetch_address_lookup(input);
-      setSuggestions(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+      const response = await fetch_address_lookup(input);;
+      if (!response) {
+        throw new Error('Error: No response received');
+      }
+      if (!response.ok) {
+        throw new Error(`Error: Response not okay - Status: ${response.status}`);
+      }
   
+      const data = await response.json();
+      if (!data) {
+        throw new Error('Error: Response data is undefined');
+      }
+  
+      setSuggestions(data);
+    } catch (error) {
+      if (error) {
+        console.error('Error fetching data:', error);
+      } else {
+        console.error('Unknown error occurred');
+      }
+    }
+  }
+
+
   useEffect(() => {
     if (inputValue) {
       fetchData(inputValue);
