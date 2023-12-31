@@ -3,16 +3,14 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { Grid } from '@mui/material';
-import { fetch_address_lookup } from './utils/project_utils';
-import { IContactInformation } from '../components/interfaces';
+import { fetch_address_lookup } from '../utils/project_utils';
+import { IContactInformation } from '../interfaces';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import './ReferralForm.css';
 
-const redAsteriskStyle = {
-  color: 'red', 
-};
 
 interface LocationInfo {
   display_name: string;
@@ -93,7 +91,7 @@ export const ReferralForm: React.FC<{
             label={
               <span>
                 First name{' '}
-                <span style={redAsteriskStyle}>*</span>
+                <span className="redAsterisk">*</span>
               </span>
             }
             fullWidth
@@ -110,7 +108,7 @@ export const ReferralForm: React.FC<{
             label={
               <span>
                 Last name{' '}
-                <span style={redAsteriskStyle}>*</span>
+                <span className="redAsterisk">*</span>
               </span>
             }
             fullWidth
@@ -126,7 +124,7 @@ export const ReferralForm: React.FC<{
       label={
         <span>
         Date of Birth{' '}
-        <span style={redAsteriskStyle}>*</span>
+        <span className="redAsterisk">*</span>
         </span>
         }
       />
@@ -145,7 +143,7 @@ export const ReferralForm: React.FC<{
             label={
               <span>
                 Contact Language{' '}
-                <span style={redAsteriskStyle}>*</span>
+                <span className="redAsterisk">*</span>
               </span>
             }
             fullWidth
@@ -161,7 +159,7 @@ export const ReferralForm: React.FC<{
             label={
               <span>
                 Phone{' '}
-                <span style={redAsteriskStyle}>*</span>
+                <span className="redAsterisk">*</span>
               </span>
             }
             fullWidth
@@ -177,7 +175,7 @@ export const ReferralForm: React.FC<{
             label={
               <span>
                 Email{' '}
-                <span style={redAsteriskStyle}>*</span>
+                <span className="redAsterisk">*</span>
               </span>
             }
             fullWidth
@@ -208,7 +206,7 @@ export const ReferralForm: React.FC<{
             label={
               <span>
                 Address{' '}
-                <span style={redAsteriskStyle}>*</span>
+                <span className="redAsterisk">*</span>
               </span>
             }
             value={inputValue}
