@@ -1,0 +1,22 @@
+.headerBox {
+    padding-top: 2rem;
+}
+
+.headerBox .referralHeader {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.referralList {
+    color: #142B58;
+    padding-top: 10px;
+}
+
+.referralNote {
+    color: #FFFFFF;
+    padding-top: 10px;
+}
