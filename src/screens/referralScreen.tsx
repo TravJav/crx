@@ -16,9 +16,9 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-import { ReferralForm } from '../components/ReferralForm';
+import { ReferralForm } from '../components/ReferalForm/ReferralForm';
 import existingReferrals from '../components/utils/names_constants'
-import ReferralFormHeader from '../components/ReferralFormHeader';
+import ReferralFormHeader from '../components/ReferralFormHeader/ReferralFormHeader';
 
 
 const PlusIcon = createSvgIcon(
@@ -133,7 +133,6 @@ export default function ReferralScreen({ callback }: ReferralScreenProps) {
                 maxWidth="sm"
                 sx={{
                     mb: 4,
-                    background: '#CDE7ED',
                     padding: '20px',
                 }}
             >
@@ -162,7 +161,6 @@ export default function ReferralScreen({ callback }: ReferralScreenProps) {
                 maxWidth="sm"
                 sx={{
                     mb: 4,
-                    background: '#CDE7ED',
                     padding: '20px',
                 }}
             >
