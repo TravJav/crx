@@ -1,6 +1,5 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Header from '../Header'; // Adjust the path to the actual location of your Header component
+import Header from '../Header/Header';
 
 describe('Header component', () => {
   it('renders correctly', () => {

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import ReferralFormHeader from '../ReferralFormHeader';
+import ReferralFormHeader from '../ReferralFormHeader/ReferralFormHeader';
 
 
 describe('ReferralFormHeader component', () => {
