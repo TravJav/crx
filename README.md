@@ -60,3 +60,26 @@ Included tests, though imperfect due to Axios mocking issues, to showcase the im
 7. **End-to-End Testing:** Set up E2E testing using Cypress and Docker, integrating with CircleCI for server communication and result uploads.
 8. **Seek Clarifications:** Engage in discussions to gather more details on future views and user flow to refine the current implementation.
 
+
+
+
+# Quick Shots
+
+###With the four pre-populated referrals
+
+<img width="1567" alt="Screenshot 2024-01-02 at 11 28 20 AM" src="https://github.com/TravJav/crx/assets/16505078/c8064aa7-f4f4-446d-ab7e-a70acae2eb05">
+
+###After hitting the add referral button
+
+<img width="1355" alt="Screenshot 2024-01-02 at 11 30 12 AM" src="https://github.com/TravJav/crx/assets/16505078/f81702b1-274f-4107-b169-05a9d26cc3e1">
+
+###Trying to add more than the specified amount of referrals 
+
+<img width="1673" alt="Screenshot 2024-01-02 at 11 31 29 AM" src="https://github.com/TravJav/crx/assets/16505078/4c56a038-02f8-4204-b63a-4d494931e173">
+
+###Submission success concept banner
+
+<img width="1691" alt="Screenshot 2024-01-02 at 11 32 46 AM" src="https://github.com/TravJav/crx/assets/16505078/10c8ca78-edfe-4503-8798-225ad745fa07">
+
+
+
