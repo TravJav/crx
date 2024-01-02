@@ -78,7 +78,7 @@ I also added tests as you can see ! the tests are not perfect and I believe ther
     Building on the above we would also need more information on the db structure where this is going etc and how to package the data for the post requests and even what response we would expect back in this case
 
 2. We need to do phone number validation and country code, it would be nice to have a drop down of the country codes with their respective  flags
-3. Icons need to be evaluated again, I think it looks pretty busy using the icons in here
+3. Icons need to be evaluated again, I think it looks pretty busy using the icons in here when there is already label defintions
 4. Quick form full clear for the form that is expanded currently
 5. I'd fix the banner and make it respond a bit better as it's not flush on both sides and I was running short of time
 6. I would love to add tool tips, I like them because they dont bombard the user with info, only when asked for
@@ -86,3 +86,26 @@ I also added tests as you can see ! the tests are not perfect and I believe ther
 7. I would love to do e2e I would have made a new folder here that has a container inside and the docker composes. I would start that up in circle ci and then I would use Cypress to run a agent to run this e2e if there was a server hooked up and upload any results to cloudwatch using some circleci role I would have created 
 
 8. I would ask more questions I would try to gain a better understanding of where the next views are, what the user flow is to make small adjustments or asks to try and improve this and see if everything proposed makes sense here
+9. ** "New Referral" needs to be updated with the complete full name using a callback function Child -> Parent that will take the full name and index so it is updated upon text input.
+
+10. CSS styles need to be applied to the label inputs
+
+
+# Quick Shots
+
+## With the four pre-populated referrals
+
+<img width="1567" alt="Screenshot 2024-01-02 at 11 28 20 AM" src="https://github.com/TravJav/crx/assets/16505078/c8064aa7-f4f4-446d-ab7e-a70acae2eb05">
+
+## After hitting the add referral button
+
+<img width="1355" alt="Screenshot 2024-01-02 at 11 30 12 AM" src="https://github.com/TravJav/crx/assets/16505078/f81702b1-274f-4107-b169-05a9d26cc3e1">
+
+## Trying to add more than the specified amount of referrals 
+
+<img width="1673" alt="Screenshot 2024-01-02 at 11 31 29 AM" src="https://github.com/TravJav/crx/assets/16505078/4c56a038-02f8-4204-b63a-4d494931e173">
+
+## Submission success concept banner
+
+<img width="1691" alt="Screenshot 2024-01-02 at 11 32 46 AM" src="https://github.com/TravJav/crx/assets/16505078/10c8ca78-edfe-4503-8798-225ad745fa07">
+
