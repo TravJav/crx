@@ -6,3 +6,15 @@
     width: 100%;
   }
   
+/* styles.css */
+.formLabelStyle {
+    /* Define your styles */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3A719B; /* Text color */
+  }
+  
