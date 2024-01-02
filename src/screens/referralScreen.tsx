@@ -99,7 +99,15 @@ export default function ReferralScreen({ callback }: ReferralScreenProps) {
                     <div style={{ backgroundColor: contactInfo.indexColour, borderRadius: '4px', width: '40px', marginRight: '8px' }}>
                         <Typography style={{ color: 'white', textAlign: 'center' }}>{index + 1}</Typography>
                     </div>
-                    <Typography style={{ textAlign: 'left', flex: '1' }}>{contactInfo.name}</Typography>
+                    <Typography style={{ textAlign: 'left', flex: '1',          
+                        fontFamily: 'Montserrat',
+                        fontSize: '20px',
+                        fontWeight: 400,
+                        lineHeight: '24px',
+                        letterSpacing: '0em',
+                        color: '#3A719B'}}>
+                        {contactInfo.name}
+            </Typography>
                     <div style={{ marginLeft: 'auto' }}>
                         <IconButton aria-label="delete" style={{ color: '#0B2B5B' }} onClick={() => handleDelete(index)}>
                             <DeleteIcon />
