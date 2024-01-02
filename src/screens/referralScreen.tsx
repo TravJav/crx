@@ -16,9 +16,9 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-import { ReferralForm } from '../components/ReferralForm';
+import { ReferralForm } from '../components/ReferalForm/ReferralForm';
 import existingReferrals from '../components/utils/names_constants'
-import ReferralFormHeader from '../components/ReferralFormHeader';
+import ReferralFormHeader from '../components/ReferralFormHeader/ReferralFormHeader';
 
 
 const PlusIcon = createSvgIcon(
@@ -99,7 +99,15 @@ export default function ReferralScreen({ callback }: ReferralScreenProps) {
                     <div style={{ backgroundColor: contactInfo.indexColour, borderRadius: '4px', width: '40px', marginRight: '8px' }}>
                         <Typography style={{ color: 'white', textAlign: 'center' }}>{index + 1}</Typography>
                     </div>
-                    <Typography style={{ textAlign: 'left', flex: '1' }}>{contactInfo.name}</Typography>
+                    <Typography style={{ textAlign: 'left', flex: '1',          
+                        fontFamily: 'Montserrat',
+                        fontSize: '20px',
+                        fontWeight: 400,
+                        lineHeight: '24px',
+                        letterSpacing: '0em',
+                        color: '#3A719B'}}>
+                        {contactInfo.name}
+            </Typography>
                     <div style={{ marginLeft: 'auto' }}>
                         <IconButton aria-label="delete" style={{ color: '#0B2B5B' }} onClick={() => handleDelete(index)}>
                             <DeleteIcon />
@@ -133,7 +141,6 @@ export default function ReferralScreen({ callback }: ReferralScreenProps) {
                 maxWidth="sm"
                 sx={{
                     mb: 4,
-                    background: '#CDE7ED',
                     padding: '20px',
                 }}
             >
@@ -162,7 +169,6 @@ export default function ReferralScreen({ callback }: ReferralScreenProps) {
                 maxWidth="sm"
                 sx={{
                     mb: 4,
-                    background: '#CDE7ED',
                     padding: '20px',
                 }}
             >

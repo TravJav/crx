@@ -1,8 +1,9 @@
-import { Container } from '@mui/material';
-import { useState} from 'react';
+import { Box } from '@mui/material';
+import { useState } from 'react';
 import Alert from '@mui/material/Alert';
 import ReferralScreen from './screens/referralScreen';
-import Header from './components/Header';
+import Header from './components/Header/Header';
+import './App.css'; 
 
 export default function App() {
   const [message, setMessage] = useState('');
@@ -15,19 +16,12 @@ export default function App() {
   };
 
   return (
-    <Container
-      maxWidth="xg"
-      sx={{
-        backgroundColor: '#CDE7ED',
-        width: '100%',
-        paddingTop: 0,
-      }}
-    >
+    <Box className="appContainer">
       <Header />
       {message && message.type && (
         <Alert severity={message.type}>{message.message}</Alert>
       )}
-      <ReferralScreen callback={handleCallback}/>
-    </Container>
+      <ReferralScreen callback={handleCallback} />
+    </Box>
   );
 }

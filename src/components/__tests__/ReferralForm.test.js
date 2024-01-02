@@ -1,6 +1,5 @@
-import React from 'react';
 import { render, fireEvent, screen} from '@testing-library/react';
-import { ReferralForm } from '../ReferralForm';
+import { ReferralForm } from '../ReferalForm/ReferralForm';
 
 describe('ReferralForm component', () => {
   const mockContactInformation = {

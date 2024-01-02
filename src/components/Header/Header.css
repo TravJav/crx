@@ -1,0 +1,11 @@
+.headerContainer .headerTypography {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 85px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0B2B5B;
+    background-color: #FFFFFF;
+    width: 100%;
+}
