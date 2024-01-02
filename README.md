@@ -60,7 +60,7 @@ Included tests, though imperfect due to Axios mocking issues, to showcase the im
 7. **End-to-End Testing:** Set up E2E testing using Cypress and Docker, integrating with CircleCI for server communication and result uploads.
 8. **Seek Clarifications:** Engage in discussions to gather more details on future views and user flow to refine the current implementation.
 
-
+9. ** "New Referral" needs to be updated with the complete full name using a callback function Child -> Parent that will take the full name and index so it is updated upon text input.
 
 
 # Quick Shots
